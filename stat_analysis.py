@@ -98,9 +98,9 @@ for fn in pred_surv:
     surv_y_interp = np.interp(t_grid, fn.x, fn.y)
     plt.step(t_grid, surv_y_interp, where="post", alpha=0.2)
 
-plt.xlabel("Time (days)")
-plt.ylabel("Probability of no discharge")
-plt.title("Survival Curves for Test Data")
+plt.xlabel("Length Of Stay (days)")
+plt.ylabel("Survival Function Of Patient")
+plt.title("Survival Functions Of All Patients For Test Data Vs. LOS")
 plt.show()
 
 # Plot cumulative incidence functions (Probability of discharge)
@@ -110,9 +110,9 @@ for fn in pred_surv:
     ci_y_interp = np.interp(t_grid, fn.x, ci_y)
     plt.step(t_grid, ci_y_interp, where="post", alpha=0.2)
 
-plt.xlabel("Time (days)")
-plt.ylabel("Probability of discharge")
-plt.title("Probability of Discharge vs Time (days)")
+plt.xlabel("Length Of Stay (days)")
+plt.ylabel("Cumulative Distribution Function Of Patient")
+plt.title("Cumulative Distribution Functions Of All Patients For Test Data Vs. LOS")
 plt.show()
 
 # Plot derivative of cumulative incidence functions
@@ -123,7 +123,7 @@ for fn in pred_surv:
     derivative = np.gradient(ci_y_interp, t_grid)
     plt.plot(t_grid, derivative, alpha=0.2)
 
-plt.xlabel("Time (days)")
-plt.ylabel("Derivative of Probability of discharge")
-plt.title("Derivative of Probability of Discharge vs Time (days)")
+plt.xlabel("Length Of Stay (days)")
+plt.ylabel("Probability Density Function Of Patient")
+plt.title("Probability Density Function Of All Patients For Test Data Vs. LOS")
 plt.show()
