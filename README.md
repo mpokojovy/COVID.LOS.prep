@@ -24,3 +24,15 @@ To create `LOS.train.imp.rf.df.csv` and `LOS.test.imp.rf.df.csv`,
 11. Install package `quantreg` via `R -e "install.packages('quantreg', repos='http://cran.rstudio.com/')".
 
 12. Run `Rscript main.R`.
+
+13. Run `python -m venv env`.
+
+14. Run `source env/Scripts/activate`.
+
+15. Run `pip install pandas`.
+
+16. Run `pip install scikit-learn`.
+
+17. Run `pip install scikit-survival`.
+
+18. Run `pip install matplotlib`.
