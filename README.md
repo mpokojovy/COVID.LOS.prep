@@ -25,14 +25,18 @@ To create `LOS.train.imp.rf.df.csv` and `LOS.test.imp.rf.df.csv`,
 
 12. Run `Rscript main.R`.
 
-13. Run `python -m venv env`.
+To conduct survival analysis in Python,
 
-14. Run `source env/Scripts/activate`.
+1. Run `python -m venv env`.
 
-15. Run `pip install pandas`.
+2. Run `source env/Scripts/activate`.
 
-16. Run `pip install scikit-learn`.
+3. Run `pip install pandas`.
 
-17. Run `pip install scikit-survival`.
+4. Run `pip install scikit-learn`.
 
-18. Run `pip install matplotlib`.
+5. Run `pip install scikit-survival`.
+
+6. Run `pip install matplotlib`.
+
+7. Run `python stat_analysis.py`.
