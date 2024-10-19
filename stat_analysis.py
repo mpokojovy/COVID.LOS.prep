@@ -8,8 +8,8 @@ from sksurv.util import Surv
 import matplotlib.pyplot as plt
 
 # Read the data
-LOS_train_df = pd.read_csv('LOS.train.imp.rf.df.csv', header=0, sep=',', dtype=str)
-LOS_test_df = pd.read_csv('LOS.test.imp.rf.df.csv', header=0, sep=',', dtype=str)
+LOS_train_df = pd.read_csv('imputed.tables/LOS.train.imp.rf.df.csv', header=0, sep=',', dtype=str)
+LOS_test_df = pd.read_csv('imputed.tables/LOS.test.imp.rf.df.csv', header=0, sep=',', dtype=str)
 
 # Vitals
 vital_names = ["BMI", "BP_DIASTOLIC", "BP_SYSTOLIC", "PULSE", "PULSE.OXIMETRY", "RESPIRATIONS", "TEMPERATURE"]
