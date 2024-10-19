@@ -125,5 +125,5 @@ for fn in pred_surv:
 
 plt.xlabel("Length Of Stay (days)")
 plt.ylabel("Probability Density Function Of Patient")
-plt.title("Probability Density Function Of All Patients For Test Data Vs. LOS")
+plt.title("Probability Density Functions Of All Patients For Test Data Vs. LOS")
 plt.show()
